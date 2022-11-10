@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="text-center pt-5 font-extrabold">
+        <h1>Let's get some Money</h1>
+    </header>
+    <main>
+        <!-- balance and transaction start  -->
+        <section class="grid grid-cols-3 w-3/4 mx-auto mt-4 gap-4 text-white">
+            <div class="bg-emerald-300 text-center py-7">
+                <h2>Deposit</h2>
+                <h3 >$<span id="deposite-total">00</span> </h3>
+            </div>
+            <div class="bg-amber-300 text-center py-7  ">
+                <h2>Withdrow</h2>
+                <h3>$<span id="withdrawTotal">00</span></h3>
+            </div>
+            <div class="bg-lime-300 text-center py-7  ">
+                <h2>Balance</h2>
+                <h3 >$<span id="balance-total">1200</span> </h3>
+            </div>
+        </section>
+        <!-- balance and transaction  end-->
+
+        <!-- deposite start  -->
+        <section class="grid grid-cols-2 text-dark w-3/4 mx-auto mt-4 gap-8">
+            <div class="p-5 bg-lime-300">
+                <h3>Please Deposite</h3>
+            <div class="block">
+                <input id="depositeInput" class="border mb-3 w-3/4" type="text" placeholder="$Enter your amount">
+                <br>
+                <button id="depositeBtn" class="bg-teal-300 px-3 py-2 text-neutral-900">Deposite</button>
+            </div>
+            </div>
+
+            <div class="bg-emerald-300 p-5">
+                <h3>Please Withdrow amount</h3>
+            <div class="block">
+                <input id="withdrowInput" class="border mb-3 w-3/4" type="text" placeholder="$ Enter your withdraw amount">
+                <br>
+                <button id="withdrawBtn" class="bg-amber-300 px-3 py-2 text-neutral-900">Withdraw</button>
+            </div>
+            </div>
+        </section>
+        <!-- deposite end -->
+    </main>
+    <script src="bank.js"></script>
+</body>
+</html>
